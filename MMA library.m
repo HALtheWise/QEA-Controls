@@ -13,6 +13,26 @@ Export[FileNameJoin[{NotebookDirectory[],name}],EvaluationNotebook[]]
 
 
 (* ::Subsection:: *)
+(*Vector equations*)
+
+
+splitVectorEqn[eqn_]:=Module[{},
+If[Head[eqn]==Equal,Thread[eqn],eqn]
+]
+
+
+(* ::Subsection:: *)
+(*Polar Coordinates*)
+
+
+rhat={1,0};
+\[Theta]hat={0,1};
+
+
+polaraccel[]:=r''[t]rhat+2 r'[t] \[Theta]'[t] \[Theta]hat+r \[Theta]''[t] \[Theta]hat-r \[Theta]'[t]^2 rhat
+
+
+(* ::Subsection:: *)
 (*Template cell*)
 
 
