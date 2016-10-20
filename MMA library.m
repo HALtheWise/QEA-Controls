@@ -29,7 +29,7 @@ rhat={1,0};
 \[Theta]hat={0,1};
 
 
-polaraccel[]:=r''[t]rhat+2 r'[t] \[Theta]'[t] \[Theta]hat+r \[Theta]''[t] \[Theta]hat-r \[Theta]'[t]^2 rhat
+polaraccel[]:=r''[t]rhat+2 r'[t] \[Theta]'[t] \[Theta]hat+r[t]\[Theta]''[t] \[Theta]hat-r[t] \[Theta]'[t]^2 rhat
 
 
 (* ::Subsection:: *)
