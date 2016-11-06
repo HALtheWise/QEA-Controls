@@ -13,6 +13,17 @@ Export[FileNameJoin[{NotebookDirectory[],name}],EvaluationNotebook[]]
 
 
 (* ::Subsection:: *)
+(*Hardware interfacing*)
+
+
+findArduino[id_:1]:=Module[{ports},
+ports=FileNames["/dev/ttyACM*"];
+If[Length[ports]<id,Return[NotFoundError[]]];
+arduino=DeviceOpen["Arduino",Echo[ports[[id]]]]
+]
+
+
+(* ::Subsection:: *)
 (*Vector equations*)
 
 
