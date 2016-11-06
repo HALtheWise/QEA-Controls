@@ -1,0 +1,3 @@
+[submodule "QEA-BB8"]
+	path = QEA-BB8
+	url = git@github.com:HALtheWise/QEA-BB8.git
