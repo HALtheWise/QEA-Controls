@@ -1165,9 +1165,12 @@ Cell[BoxData[{
      RowBox[{"{", 
       RowBox[{"t", ",", "0", ",", "100"}], "}"}], ",", 
      RowBox[{"PlotRange", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"-", "10"}], ",", "10"}], "}"}]}], ",", 
+      AdjustmentBox[
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"-", "10"}], ",", "10"}], "}"}],
+       BoxBaselineShift->0.125,
+       BoxMargins->{{0., 0.}, {-0.125, 0.125}}]}], ",", 
      RowBox[{"PlotLegends", "\[Rule]", 
       RowBox[{"{", 
        RowBox[{"\"\<x\>\"", ",", 
@@ -1181,17 +1184,18 @@ Cell[BoxData[{
    3.687525949544578*^9}, {3.687526282945613*^9, 3.68752630091565*^9}, {
    3.687526406741626*^9, 3.6875264290115633`*^9}, {3.687526462591661*^9, 
    3.6875264662734947`*^9}, {3.687526538638215*^9, 3.687526546222164*^9}, {
-   3.687526647763793*^9, 3.687526660512402*^9}, 3.687526925655505*^9}],
+   3.687526647763793*^9, 3.687526660512402*^9}, 3.687526925655505*^9, 
+   3.687535761216942*^9}],
 
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`\[Omega]1$$ = 0.7000000000000001, 
-    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
-    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
-    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{
+   DynamicModuleBox[{$CellContext`\[Omega]1$$ = 3.23, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
       Hold[$CellContext`\[Omega]1$$], 0, 5}}, Typeset`size$$ = {
-    245., {3., 11.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    253., {3., 11.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
     Typeset`skipInitDone$$ = True, $CellContext`\[Omega]1$48145$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {$CellContext`\[Omega]1$$ = 0}, 
@@ -1207,7 +1211,7 @@ Cell[BoxData[
          0.1, $CellContext`\[Omega] -> $CellContext`\[Omega]1$$}), 
       "Specifications" :> {{$CellContext`\[Omega]1$$, 0, 5}}, "Options" :> {},
        "DefaultOptions" :> {}],
-     ImageSizeCache->{292., {48., 55.}},
+     ImageSizeCache->{300., {48., 55.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
