@@ -1,0 +1,163 @@
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"SetDirectory", "[", 
+   RowBox[{"NotebookDirectory", "[", "]"}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"<<", "\"\<../MMA library.m\>\""}]}], "Input",
+ CellChangeTimes->{{3.68838241003546*^9, 3.688382428159276*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Normal", "@", 
+  RowBox[{"Series", "[", 
+   RowBox[{"x", ",", 
+    RowBox[{"{", 
+     RowBox[{"x", ",", "1", ",", "1"}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.688381645230968*^9, 3.688381648141407*^9}, {
+  3.688381686551589*^9, 3.68838168783225*^9}, {3.688381804341775*^9, 
+  3.688381842624358*^9}, {3.6883820108886013`*^9, 3.688382012379019*^9}, {
+  3.688382183039854*^9, 3.688382183378227*^9}, {3.688382228873294*^9, 
+  3.6883822691108713`*^9}, {3.6883823523131447`*^9, 3.688382395677759*^9}}],
+
+Cell[BoxData["x"], "Output",
+ CellChangeTimes->{{3.6883818263460913`*^9, 3.688381842979005*^9}, 
+   3.688382012637281*^9, {3.688382183913368*^9, 3.688382196061862*^9}, {
+   3.688382229161762*^9, 3.6883822694406843`*^9}, {3.688382355884457*^9, 
+   3.688382395844101*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Table", "[", 
+  RowBox[{"x", ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"1", "\[Rule]", "2"}], ",", 
+       RowBox[{"3", "\[Rule]", "4"}]}], "}"}]}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.6883826852559767`*^9, 3.688382697999321*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"1", "\[Rule]", "2"}], ",", 
+   RowBox[{"3", "\[Rule]", "4"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.688382698266054*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Taylorseries", "[", 
+  RowBox[{
+   RowBox[{"x", 
+    RowBox[{"(", 
+     RowBox[{"3", "-", "x", "-", 
+      RowBox[{"2", "y"}]}], ")"}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"x", "\[Rule]", "1"}], ",", 
+     RowBox[{"y", "\[Rule]", "1"}]}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.68838319366074*^9, 3.688383212866598*^9}}],
+
+Cell[BoxData[
+ RowBox[{"1", "+", "x", "-", 
+  RowBox[{"2", " ", "x", " ", "y"}]}]], "Output",
+ CellChangeTimes->{{3.688383213353594*^9, 3.688383226203706*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Simplify", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"-", "1"}], "+", "x"}], ")"}], " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"-", "1"}], "-", 
+      RowBox[{"2", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", "1"}], "+", "y"}], ")"}]}]}], ")"}]}], "-", 
+   RowBox[{"2", " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"-", "1"}], "+", "y"}], ")"}]}]}], "]"}]], "Input",
+ NumberMarks->False],
+
+Cell[BoxData[
+ RowBox[{"1", "+", "x", "-", 
+  RowBox[{"2", " ", "x", " ", "y"}]}]], "Output",
+ CellChangeTimes->{3.688383217923991*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Taylorseries", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"x", ",", 
+     RowBox[{"Sin", "@", "x"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", "\[Rule]", 
+     RowBox[{"Pi", "/", "3"}]}], "}"}], ",", "2"}], "]"}]], "Input",
+ CellChangeTimes->{{3.68838326534733*^9, 3.688383369988166*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"x", ",", 
+   RowBox[{
+    FractionBox["1", "4"], " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"2", " ", 
+       SqrtBox["3"]}], "+", 
+      RowBox[{"2", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", 
+          FractionBox["\[Pi]", "3"]}], "+", "x"}], ")"}]}], "-", 
+      RowBox[{
+       SqrtBox["3"], " ", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", 
+           FractionBox["\[Pi]", "3"]}], "+", "x"}], ")"}], "2"]}]}], 
+     ")"}]}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.688383271466428*^9, 3.6883833702410097`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"D", "[", 
+  RowBox[{
+   RowBox[{"Exp", "[", 
+    RowBox[{
+     RowBox[{"-", "a"}], " ", "t"}], "]"}], ",", "t"}], "]"}]], "Input",
+ CellChangeTimes->{{3.6883836675176687`*^9, 3.6883836741075087`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"-", "a"}], " ", 
+  SuperscriptBox["\[ExponentialE]", 
+   RowBox[{
+    RowBox[{"-", "a"}], " ", "t"}]]}]], "Output",
+ CellChangeTimes->{3.688383674397941*^9}]
+}, Open  ]]
+},
+WindowSize->{808, 911},
+WindowMargins->{{556, Automatic}, {48, Automatic}},
+FrontEndVersion->"11.0 for Linux x86 (64-bit) (July 28, 2016)",
+StyleDefinitions->"Default.nb"
+]
+

@@ -13,6 +13,16 @@ Export[FileNameJoin[{NotebookDirectory[],name}],EvaluationNotebook[]]
 
 
 (* ::Subsection:: *)
+(*Taylor Polynomials*)
+
+
+Taylorseries[eqn_,x0_,pow_:1]:=Module[{terms},
+terms=Table[{rule[[1]],rule[[2]],pow},{rule,x0}];
+Simplify@Normal[Apply[Series,Prepend[terms,eqn]]]./x0
+]
+
+
+(* ::Subsection:: *)
 (*Hardware interfacing*)
 
 
